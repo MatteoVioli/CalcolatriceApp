@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestAndroidApp"
+             x:Class="TestAndroidApp.MainPage">
+    <StackLayout>
+        <StackLayout Orientation="Vertical" Margin="-15"  >
+
+            <Label x:Name="lblSaluto" TextColor="White" Text="Calcolatrice" BackgroundColor="DarkCyan" HorizontalTextAlignment="Center" Margin="15"  FontSize="30"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Inserisci il primo numero"  VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="25"></Label>
+            <Entry x:Name="txtNum1" Text="" HorizontalTextAlignment="Center"  ></Entry>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Inserisci il secondo numero"  VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="25"></Label>
+            <Entry x:Name="txtNum2" Text=""    HorizontalTextAlignment="Center"  ></Entry>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" >
+            <Label Text="Risultato :"  VerticalOptions="Center" HorizontalTextAlignment="Start" FontSize="25"></Label>
+            <Label Text="0" x:Name="lblRisultato" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="25"></Label>
+
+        </StackLayout>
+         
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="+" Clicked="OnButtonClickedSomma"></Button>
+            <Button Text="-" Clicked="OnButtonClickedSottrazione"></Button>
+            <Button Text="X" Clicked="OnButtonClickedMoltiplicazione"></Button>
+            <Button Text=":" Clicked="OnButtonClickedDivisione"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label Text="Numero"  VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="25"></Label>
+            <Entry x:Name="txtElv" Text="" HorizontalTextAlignment="Center"  ></Entry>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+           
+            <Label Text="0"  x:Name="lblPotenza" FontSize="25"></Label>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Button Text="√" Clicked="OnButtonClickedQuadra"></Button>
+            <Button Text="elv" Clicked="OnButtonClickedPotenza"></Button>
+        </StackLayout>
+
+    </StackLayout>
+   
+
+
+
+
+
+
+
+
+    
+</ContentPage>
